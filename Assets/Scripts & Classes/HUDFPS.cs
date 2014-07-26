@@ -20,7 +20,6 @@ public  float updateInterval = 0.5F;
 private float accum   = 0; // FPS accumulated over the interval
 private int   frames  = 0; // Frames drawn over the interval
 private float timeleft; // Left time for current interval
-private float new;
  
 void Start()
 {
