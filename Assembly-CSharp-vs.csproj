@@ -19,7 +19,7 @@
 	<DebugType>full</DebugType>
 	<Optimize>false</Optimize>
 	<OutputPath>Temp\bin\Debug\</OutputPath>
-	<DefineConstants>DEBUG;TRACE;UNITY_4_5_2;UNITY_4_5;UNITY_STANDALONE_WIN;ENABLE_MICROPHONE;ENABLE_TEXTUREID_MAP;ENABLE_UNITYEVENTS;ENABLE_NEW_HIERARCHY ;ENABLE_AUDIO_FMOD;UNITY_STANDALONE;ENABLE_MONO;ENABLE_TERRAIN;ENABLE_SUBSTANCE;ENABLE_GENERICS;INCLUDE_WP8SUPPORT;ENABLE_MOVIES;ENABLE_WWW;ENABLE_IMAGEEFFECTS;ENABLE_WEBCAM;INCLUDE_METROSUPPORT;RENDER_SOFTWARE_CURSOR;ENABLE_NETWORK;ENABLE_PHYSICS;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_2D_PHYSICS;ENABLE_SHADOWS;ENABLE_AUDIO;ENABLE_NAVMESH_CARVING;ENABLE_DUCK_TYPING;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_WIN</DefineConstants>
+	<DefineConstants>DEBUG;TRACE;UNITY_4_5_2;UNITY_4_5;UNITY_STANDALONE_WIN;ENABLE_MICROPHONE;ENABLE_TEXTUREID_MAP;ENABLE_UNITYEVENTS;ENABLE_NEW_HIERARCHY ;ENABLE_AUDIO_FMOD;UNITY_STANDALONE;ENABLE_MONO;ENABLE_TERRAIN;ENABLE_SUBSTANCE;ENABLE_GENERICS;INCLUDE_WP8SUPPORT;ENABLE_MOVIES;ENABLE_WWW;ENABLE_IMAGEEFFECTS;ENABLE_WEBCAM;INCLUDE_METROSUPPORT;RENDER_SOFTWARE_CURSOR;ENABLE_NETWORK;ENABLE_PHYSICS;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_2D_PHYSICS;ENABLE_SHADOWS;ENABLE_AUDIO;ENABLE_NAVMESH_CARVING;ENABLE_DUCK_TYPING;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_WIN;UNITY_TEAM_LICENSE;UNITY_PRO_LICENSE</DefineConstants>
 	<ErrorReport>prompt</ErrorReport>
 	<WarningLevel>4</WarningLevel>
 	<NoWarn>0169</NoWarn>
@@ -114,46 +114,7 @@
      <Compile Include="Assets\AstarPathfindingProject\Utilities\SizeProfiler.cs" />
      <Compile Include="Assets\AstarPathfindingProject\Utilities\UnityReferenceHelper.cs" />
      <Compile Include="Assets\AstarPathfindingProject\changelog.cs" />
-     <Compile Include="Assets\Scripts &amp; Classes\Data Types\Evidence\DeadBody.cs" />
-     <Compile Include="Assets\Scripts &amp; Classes\Data Types\Evidence\Evidence.cs" />
-     <Compile Include="Assets\Scripts &amp; Classes\Data Types\Evidence\EvidenceCredibility.cs" />
-     <Compile Include="Assets\Scripts &amp; Classes\Data Types\Evidence\FingerPrints.cs" />
-     <Compile Include="Assets\Scripts &amp; Classes\Data Types\Evidence\FootPrints.cs" />
-     <Compile Include="Assets\Scripts &amp; Classes\Data Types\Evidence\KnownToBeAt.cs" />
-     <Compile Include="Assets\Scripts &amp; Classes\Data Types\Evidence\ObjectiveEvidence.cs" />
-     <Compile Include="Assets\Scripts &amp; Classes\Data Types\Evidence\SubjectiveEvidence.cs" />
-     <Compile Include="Assets\Scripts &amp; Classes\Data Types\Evidence\WeaponTools.cs" />
-     <Compile Include="Assets\Scripts &amp; Classes\Data Types\HouseholdsRatio.cs" />
-     <Compile Include="Assets\Scripts &amp; Classes\Data Types\PersonalScore.cs" />
-     <Compile Include="Assets\Scripts &amp; Classes\Data Types\PersonalStats\PersonStats.cs" />
-     <Compile Include="Assets\Scripts &amp; Classes\Data Types\PersonalStats\PersonStatsGroup.cs" />
-     <Compile Include="Assets\Scripts &amp; Classes\Data Types\Social Events\Murder.cs" />
-     <Compile Include="Assets\Scripts &amp; Classes\Data Types\Social Events\SocialEvent.cs" />
-     <Compile Include="Assets\Scripts &amp; Classes\Data Types\Social Events\SocialEventAttribution.cs" />
-     <Compile Include="Assets\Scripts &amp; Classes\Data Types\Social Strutures\Clique.cs" />
-     <Compile Include="Assets\Scripts &amp; Classes\Data Types\Social Strutures\Family.cs" />
-     <Compile Include="Assets\Scripts &amp; Classes\Data Types\Social Strutures\Household.cs" />
-     <Compile Include="Assets\Scripts &amp; Classes\Data Types\Social Strutures\Pack.cs" />
-     <Compile Include="Assets\Scripts &amp; Classes\Data Types\Social Strutures\SocialStructure.cs" />
-     <Compile Include="Assets\Scripts &amp; Classes\Data Types\Social Strutures\Workplace.cs" />
-     <Compile Include="Assets\Scripts &amp; Classes\Data Types\TabledPersonValue.cs" />
-     <Compile Include="Assets\Scripts &amp; Classes\Info\Building.cs" />
-     <Compile Include="Assets\Scripts &amp; Classes\Info\Food.cs" />
-     <Compile Include="Assets\Scripts &amp; Classes\Info\House.cs" />
-     <Compile Include="Assets\Scripts &amp; Classes\Info\Info.cs" />
-     <Compile Include="Assets\Scripts &amp; Classes\Info\Item.cs" />
-     <Compile Include="Assets\Scripts &amp; Classes\Info\Person.cs" />
-     <Compile Include="Assets\Scripts &amp; Classes\Info\Puppet.cs" />
-     <Compile Include="Assets\Scripts &amp; Classes\ManipulatorsUtils.cs" />
-     <Compile Include="Assets\Scripts &amp; Classes\Player\Player.cs" />
-     <Compile Include="Assets\Scripts &amp; Classes\Player\PlayerInput.cs" />
-     <Compile Include="Assets\Scripts &amp; Classes\Player\UseCamera.cs" />
-     <Compile Include="Assets\Scripts &amp; Classes\Settings.cs" />
-     <Compile Include="Assets\Scripts &amp; Classes\Town.cs" />
-     <Compile Include="Assets\Scripts &amp; Classes\todo.cs" />
-     <Compile Include="Assets\TestChildClass.cs" />
-     <Compile Include="Assets\TestClass.cs" />
-     <Compile Include="Assets\exampleFile.cs" />
+     <Compile Include="Assets\Scripts &amp; Classes\HUDFPS.cs" />
      <None Include="Assets\AstarPathfindingProject\Editor\EditorAssets\Materials\Navmesh2.shader" />
      <None Include="Assets\AstarPathfindingProject\Plugins\DotNetZip\License.txt" />
      <None Include="Assets\AstarPathfindingProject\ExampleScenes\Materials\Projector Multiply.shader" />
@@ -168,10 +129,10 @@
      <None Include="Assets\AstarPathfindingProject\Plugins\JsonFx\Readme.txt" />
      <None Include="Assets\AstarPathfindingProject\link.xml" />
  <Reference Include="Pathfinding.Ionic.Zip.Reduced">
- <HintPath>C:/Users/Mark/Documents/The Manipulators/Assets/AstarPathfindingProject/Plugins/DotNetZip/Pathfinding.Ionic.Zip.Reduced.dll</HintPath>
+ <HintPath>C:/Users/Public/Documents/Unity Projects/The Manipulators/Assets/AstarPathfindingProject/Plugins/DotNetZip/Pathfinding.Ionic.Zip.Reduced.dll</HintPath>
  </Reference>
  <Reference Include="Pathfinding.JsonFx">
- <HintPath>C:/Users/Mark/Documents/The Manipulators/Assets/AstarPathfindingProject/Plugins/JsonFx/Pathfinding.JsonFx.dll</HintPath>
+ <HintPath>C:/Users/Public/Documents/Unity Projects/The Manipulators/Assets/AstarPathfindingProject/Plugins/JsonFx/Pathfinding.JsonFx.dll</HintPath>
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
