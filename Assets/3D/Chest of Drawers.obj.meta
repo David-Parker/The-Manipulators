@@ -1,15 +1,30 @@
 fileFormatVersion: 2
-guid: 6ac6694dd977643948f7ae7305e370ba
+guid: 62ee5838e344b894a957b79259969d38
 ModelImporter:
   serializedVersion: 16
   fileIDToRecycleName:
-    100000: //RootNode
-    100002: navmesh_example6navmesh
-    400000: //RootNode
-    400002: navmesh_example6navmesh
-    2300000: navmesh_example6navmesh
-    3300000: navmesh_example6navmesh
-    4300000: navmesh_example6navmesh
+    100000: Chest
+    100002: //RootNode
+    100004: Drawer001
+    100006: Drawer002
+    100008: Drawer003
+    400000: Chest
+    400002: //RootNode
+    400004: Drawer001
+    400006: Drawer002
+    400008: Drawer003
+    2300000: Chest
+    2300002: Drawer001
+    2300004: Drawer002
+    2300006: Drawer003
+    3300000: Chest
+    3300002: Drawer001
+    3300004: Drawer002
+    3300006: Drawer003
+    4300000: Chest
+    4300002: Drawer001
+    4300004: Drawer002
+    4300006: Drawer003
     9500000: //RootNode
   materials:
     importMaterials: 1

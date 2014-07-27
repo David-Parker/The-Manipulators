@@ -19,7 +19,7 @@ public class CameraController : MonoBehaviour {
 	public float distance = 50;
 	public float sensitivityDistance = 50;
 	public float minFOV = 5;
-	public float maxFOV = 100;
+	public float maxFOV = 60;
 
 	void Start () {
 		/* Initialize the camera to a known state */
@@ -52,8 +52,17 @@ public class CameraController : MonoBehaviour {
 
 		/* Check for Orbit */
 		if(Input.GetKey(KeyCode.LeftShift)) {
-			int direction = (Input.mousePosition.x > Screen.width/2) ? -scrollSpeed : scrollSpeed;
-			transform.RotateAround(origin.position, Vector3.up,direction);
+			int direction = (Input.mousePosition.x > Screen.width/2) ? scrollSpeed : -scrollSpeed;
+			RaycastHit hit;
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            if(Physics.Raycast(ray, out hit)) {
+            	if(hit.collider != null) {
+            		transform.RotateAround(hit.point, Vector3.up,direction);
+            	}
+            }
+            else {
+            	transform.RotateAround(origin.position, Vector3.up,direction);
+            }
 		}
 	
 	}
