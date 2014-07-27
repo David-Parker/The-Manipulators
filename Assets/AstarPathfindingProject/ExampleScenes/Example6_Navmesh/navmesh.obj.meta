@@ -1,22 +1,24 @@
 fileFormatVersion: 2
-guid: a93a284d1b79c5c4ea2e169dff5b081a
+guid: 6ac6694dd977643948f7ae7305e370ba
 ModelImporter:
   serializedVersion: 16
   fileIDToRecycleName:
-    100000: default
-    100002: //RootNode
-    400000: default
-    400002: //RootNode
-    2300000: default
-    3300000: default
-    4300000: default
-    9500000: //RootNode
+    100000: //RootNode
+    100002: navmesh_example6navmesh
+    400000: //RootNode
+    400002: navmesh_example6navmesh
+    2300000: navmesh_example6navmesh
+    3300000: navmesh_example6navmesh
+    4300000: example6navmesh
+    4300002: default
+    4300004: navmesh_example6navmesh
+    11100000: //RootNode
   materials:
     importMaterials: 1
-    materialName: 0
+    materialName: 3
     materialSearch: 1
   animations:
-    legacyGenerateAnimations: 4
+    legacyGenerateAnimations: 0
     bakeSimulation: 0
     optimizeGameObjects: 0
     motionNodeName: 
@@ -34,7 +36,7 @@ ModelImporter:
     meshCompression: 0
     addColliders: 0
     importBlendShapes: 1
-    swapUVChannels: 0
+    swapUVChannels: 1
     generateSecondaryUV: 0
     useFileUnits: 1
     optimizeMeshForGPU: 1
@@ -45,8 +47,8 @@ ModelImporter:
     secondaryUVPackMargin: 4
   tangentSpace:
     normalSmoothAngle: 60
-    splitTangentsAcrossUV: 1
-    normalImportMode: 0
+    splitTangentsAcrossUV: 0
+    normalImportMode: 1
     tangentImportMode: 1
   importAnimation: 1
   copyAvatar: 0
@@ -62,6 +64,6 @@ ModelImporter:
     feetSpacing: 0
     rootMotionBoneName: 
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 1
   additionalBone: 0
   userData: 
