@@ -9,21 +9,22 @@ public class CameraController : MonoBehaviour {
 
 	public Transform origin;
 	public Camera cam;
-	public bool rotateWithoutPivot;
+	public bool rotateWithoutPivot = true;
 
 	/* Pan Variables */
 	public int minScrollArea = 10;
-	public int speed = 5;
+	public int panSpeed = 10;
+	public int panSpeedFast = 30;
 
 	/* Orbit Variables */
-	public int scrollSpeed = 2;
+	public int zoomSpeed = 2;
 	private Vector3 pivotPoint;
 	private bool newPivot;
 	private float currPos;
 	private float lastPos;
 
 	/* Zoom Variables */
-	public float distance = 50;
+	private float distance = 50;
 	public float sensitivityDistance = 50;
 	public float minFOV = 5;
 	public float maxFOV = 60;
@@ -38,6 +39,7 @@ public class CameraController : MonoBehaviour {
 	
 	void Update () {
 		/* Check for pan */
+		int speed = (Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift)) ? panSpeedFast : panSpeed;
 		if(Input.mousePosition.x < (Screen.width/minScrollArea)) {
 			transform.position -= transform.TransformDirection(1,0,0)*speed/speedSmooth;
 		}
@@ -61,8 +63,7 @@ public class CameraController : MonoBehaviour {
 
 		/* Check for Orbit */
 		if(Input.GetMouseButton(2)) {
-			/* Only pivot around the point where the user initially pressed shift */
-			int direction = (Input.mousePosition.x > Screen.width/2) ? scrollSpeed : -scrollSpeed;
+			/* Only pivot around the point where the user initially held down the rotate button. */
 			RaycastHit hit;
             Ray ray = Camera.main.ViewportPointToRay(new Vector3(0.5F, 0.5F, 0));
 
@@ -73,15 +74,16 @@ public class CameraController : MonoBehaviour {
             		if(newPivot) {
             			pivotPoint = hit.point;
             			newPivot = false;
-            			Debug.Log(pivotPoint);
             		}
-            		transform.RotateAround(pivotPoint, Vector3.up,(currPos - lastPos)*scrollSpeed/8);
             	}
-            	lastPos = currPos;
             }
             else if(rotateWithoutPivot) {
-            	transform.RotateAround(origin.position, Vector3.up,direction);
+            	currPos = Input.mousePosition.x;
+            	if(lastPos == UINITIALIZED) lastPos = currPos;
+            	pivotPoint = origin.position;
             }
+            transform.RotateAround(pivotPoint, Vector3.up,(currPos - lastPos)*zoomSpeed/8);
+            lastPos = currPos;
 		}
 		else {
 			newPivot = true;
