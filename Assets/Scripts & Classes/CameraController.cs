@@ -3,10 +3,13 @@ using System.Collections;
 
 public class CameraController : MonoBehaviour {
 
+	const int UINITIALIZED = -99999999;
+
 	private int speedSmooth = 50;
 
 	public Transform origin;
 	public Camera cam;
+	public bool rotateWithoutPivot;
 
 	/* Pan Variables */
 	public int minScrollArea = 10;
@@ -14,6 +17,10 @@ public class CameraController : MonoBehaviour {
 
 	/* Orbit Variables */
 	public int scrollSpeed = 2;
+	private Vector3 pivotPoint;
+	private bool newPivot;
+	private float currPos;
+	private float lastPos;
 
 	/* Zoom Variables */
 	public float distance = 50;
@@ -25,6 +32,8 @@ public class CameraController : MonoBehaviour {
 		/* Initialize the camera to a known state */
 		transform.eulerAngles = new Vector3(45,270,0);
 		distance = camera.fieldOfView;
+		lastPos = UINITIALIZED;
+		newPivot = true;
 	}
 	
 	void Update () {
@@ -51,20 +60,32 @@ public class CameraController : MonoBehaviour {
         camera.fieldOfView = Mathf.Lerp(camera.fieldOfView, distance,  Time.deltaTime * 10);
 
 		/* Check for Orbit */
-		if(Input.GetKey(KeyCode.LeftShift)) {
+		if(Input.GetMouseButton(2)) {
+			/* Only pivot around the point where the user initially pressed shift */
 			int direction = (Input.mousePosition.x > Screen.width/2) ? scrollSpeed : -scrollSpeed;
 			RaycastHit hit;
-            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            Ray ray = Camera.main.ViewportPointToRay(new Vector3(0.5F, 0.5F, 0));
+
             if(Physics.Raycast(ray, out hit)) {
+          		currPos = Input.mousePosition.x;
+          		if(lastPos == UINITIALIZED) lastPos = currPos;
             	if(hit.collider != null) {
-            		transform.RotateAround(hit.point, Vector3.up,direction);
+            		if(newPivot) {
+            			pivotPoint = hit.point;
+            			newPivot = false;
+            			Debug.Log(pivotPoint);
+            		}
+            		transform.RotateAround(pivotPoint, Vector3.up,(currPos - lastPos)*scrollSpeed/8);
             	}
+            	lastPos = currPos;
             }
-            else {
+            else if(rotateWithoutPivot) {
             	transform.RotateAround(origin.position, Vector3.up,direction);
             }
 		}
-	
+		else {
+			newPivot = true;
+			lastPos = UINITIALIZED;
+		} 
 	}
-
 }
