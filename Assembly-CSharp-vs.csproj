@@ -5,7 +5,7 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{42222F70-18C9-DA7A-2467-71A7D273B84F}</ProjectGuid>
+	<ProjectGuid>{94355134-E802-6B12-7534-6391C2C1FB37}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
@@ -118,8 +118,7 @@
      <Compile Include="Assets\AstarPathfindingProject\Utilities\UnityReferenceHelper.cs" />
      <Compile Include="Assets\AstarPathfindingProject\changelog.cs" />
      <Compile Include="Assets\Scripts &amp; Classes\CameraController.cs" />
-     <Compile Include="Assets\Scripts &amp; Classes\Selectable.cs" />
-     <Compile Include="Assets\Scripts &amp; Classes\Selector.cs" />
+     <Compile Include="Assets\Scripts &amp; Classes\SelectableUnit.cs" />
      <Compile Include="Assets\Scripts &amp; Classes\UnitManager.cs" />
      <None Include="Assets\AstarPathfindingProject\Editor\EditorAssets\Materials\Navmesh2.shader" />
      <None Include="Assets\AstarPathfindingProject\Plugins\DotNetZip\License.txt" />
@@ -136,10 +135,10 @@
      <None Include="Assets\Scenes\Development\camera-dev info.txt" />
      <None Include="Assets\AstarPathfindingProject\link.xml" />
  <Reference Include="Pathfinding.Ionic.Zip.Reduced">
- <HintPath>C:/Users/John/Google Drive/Projects/The_Manipulators/Assets/AstarPathfindingProject/Plugins/DotNetZip/Pathfinding.Ionic.Zip.Reduced.dll</HintPath>
+ <HintPath>C:/Users/John/Google Drive/Projects/Manipulators/Assets/AstarPathfindingProject/Plugins/DotNetZip/Pathfinding.Ionic.Zip.Reduced.dll</HintPath>
  </Reference>
  <Reference Include="Pathfinding.JsonFx">
- <HintPath>C:/Users/John/Google Drive/Projects/The_Manipulators/Assets/AstarPathfindingProject/Plugins/JsonFx/Pathfinding.JsonFx.dll</HintPath>
+ <HintPath>C:/Users/John/Google Drive/Projects/Manipulators/Assets/AstarPathfindingProject/Plugins/JsonFx/Pathfinding.JsonFx.dll</HintPath>
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
