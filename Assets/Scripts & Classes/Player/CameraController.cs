@@ -31,7 +31,7 @@ public class CameraController : MonoBehaviour {
 
 	void Start () {
 		/* Initialize the camera to a known state */
-		transform.eulerAngles = new Vector3(45,270,0);
+		transform.eulerAngles = new Vector3(45,180,0);
 		distance = camera.fieldOfView;
 		lastPos = UINITIALIZED;
 		newPivot = true;
