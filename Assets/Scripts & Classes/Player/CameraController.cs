@@ -49,7 +49,7 @@ public class CameraController : MonoBehaviour {
 		}
 
 		if(Input.mousePosition.y < (Screen.height/minScrollArea)) {
-			transform.position += Vector3.Cross(Vector3.up,transform.TransformDirection(1,0,0))*speed/speedSmooth;//transform.TransformDirection(0,1,1)*speed/speedSmooth;
+			transform.position += Vector3.Cross(Vector3.up,transform.TransformDirection(1,0,0))*speed/speedSmooth;
 		}
 
 		else if(Input.mousePosition.y > (Screen.height - (Screen.height/minScrollArea))) {
