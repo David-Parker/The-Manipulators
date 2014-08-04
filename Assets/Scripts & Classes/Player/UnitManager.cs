@@ -26,6 +26,15 @@ public class UnitManager : MonoBehaviour
 		selectedUnits.Clear();
 
 		debugMessageTimer = 0;
+
+		List<GameObject> selectableUnitsCheck = new List<GameObject>(GameObject.FindGameObjectsWithTag("SelectableUnit"));
+		foreach(GameObject selectable in selectableUnitsCheck){
+			if(selectable.GetComponent(typeof(SelectableUnit)) == null){
+				Debug.LogError("Not all objects in the SelectableUnit Layer have a SelectableUnit() script attached");
+				break;
+			}
+		}
+		selectableUnitsCheck.Clear();
 	}
 
 	private void OnGUI()
