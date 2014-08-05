@@ -31,7 +31,7 @@ public class CameraController : MonoBehaviour {
 
 	void Start () {
 		/* Initialize the camera to a known state */
-		transform.eulerAngles = new Vector3(45,180,0);
+		transform.eulerAngles = new Vector3(transform.eulerAngles.x,transform.eulerAngles.y,0);
 		distance = camera.fieldOfView;
 		lastPos = UINITIALIZED;
 		newPivot = true;
@@ -49,11 +49,11 @@ public class CameraController : MonoBehaviour {
 		}
 
 		if(Input.mousePosition.y < (Screen.height/minScrollArea)) {
-			transform.position -= transform.TransformDirection(0,1,1)*speed/speedSmooth;
+			transform.position += Vector3.Cross(Vector3.up,transform.TransformDirection(1,0,0))*speed/speedSmooth;
 		}
 
 		else if(Input.mousePosition.y > (Screen.height - (Screen.height/minScrollArea))) {
-			transform.position += transform.TransformDirection(0,1,1)*speed/speedSmooth;
+			transform.position -= Vector3.Cross(Vector3.up,transform.TransformDirection(1,0,0))*speed/speedSmooth;
 		}
 
 		/* Check for zoom */
