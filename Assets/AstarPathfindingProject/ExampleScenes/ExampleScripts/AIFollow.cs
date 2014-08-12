@@ -9,7 +9,7 @@ using Pathfinding;
 [AddComponentMenu("Pathfinding/AI/AIFollow (deprecated)")]
 public class AIFollow : MonoBehaviour {
 	
-	/** Target to move to */
+	/** TargetPosition to move to */
 	public Transform target;
 	
 	/** How often to search for a new path */

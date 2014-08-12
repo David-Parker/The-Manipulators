@@ -43,7 +43,7 @@ public class AIPath : MonoBehaviour {
 	 */
 	public float repathRate = 0.5F;
 	
-	/** Target to move towards.
+	/** TargetPosition to move towards.
 	 * The AI will try to follow/move towards this target.
 	 * It can be a point on the ground where the player has clicked in an RTS for example, or it can be the player object in a zombie game.
 	 */
@@ -78,7 +78,7 @@ public class AIPath : MonoBehaviour {
 	/** Determines within what range it will switch to target the next waypoint in the path */
 	public float pickNextWaypointDist = 2;
 	
-	/** Target point is Interpolated on the current segment in the path so that it has a distance of #forwardLook from the AI.
+	/** TargetPosition point is Interpolated on the current segment in the path so that it has a distance of #forwardLook from the AI.
 	  * See the detailed description of AIPath for an illustrative image */
 	public float forwardLook = 1;
 	
@@ -234,7 +234,7 @@ public class AIPath : MonoBehaviour {
 	/** Requests a path to the target */
 	public virtual void SearchPath () {
 		
-		if (target == null) throw new System.InvalidOperationException ("Target is null");
+		if (target == null) throw new System.InvalidOperationException ("TargetPosition is null");
 		
 		lastRepath = Time.time;
 		//This is where we should search to

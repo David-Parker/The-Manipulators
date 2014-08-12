@@ -136,7 +136,7 @@ namespace Pathfinding {
 		/** ID of this path. Used to distinguish between different paths */
 		public ushort pathID;
 		
-		protected Int3 hTarget; /**< Target to use for H score calculations. \see Pathfinding.Node.H */
+		protected Int3 hTarget; /**< TargetPosition to use for H score calculations. \see Pathfinding.Node.H */
 		
 		/** Which graph tags are traversable.
 		 * This is a bitmask so -1 = all bits set = all tags traversable.
