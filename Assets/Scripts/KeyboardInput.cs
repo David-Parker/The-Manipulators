@@ -16,13 +16,16 @@ public class KeyboardInput : MonoBehaviour {
 		if(keyInterruptAllowed)
 		{
 		if(Input.GetKeyDown(KeyCode.X)){
-		   if(Screen.showCursor){
+		   	if(Screen.showCursor){
 				Debug.Log("Cursor Off");
 		   		Screen.showCursor = false;
 			}
-		   else if(showCursor){
+		   	else if(showCursor){
 				Debug.Log("Cursor On");
 				Screen.showCursor = true;
+				}
+			else if(Input.GetKeyDown(KeyCode.Y)){
+				gameObject.GetComponent<StateDisplay>().UpdateState("Killa Kill");
 			}
 		}
 		}
