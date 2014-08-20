@@ -1,0 +1,122 @@
+fileFormatVersion: 2
+guid: b1fb07d684ced594ea56b02844c4462a
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: Bench_Wood_Seats_Park_Bench_Wood_Seat_2
+    100002: Bench_Wood_Seats_Park_Bench_Wood_Seat_3
+    100004: Bench_Wood_Seats_Park_Bench_Wood_Seat_4
+    100006: Bench_Wood_Seats_Park_Bench_Wood_Seat_5
+    100008: Bench_Wood_Seats_Park_Bench_Wood_Seat_6
+    100010: Bench_Wood_Seats_Park_Bench_Wood_Seat_7
+    100012: Bench_Wood_Seats_Park_Bench_Wood_Seat_8
+    100014: Bench_Wood_Seats_Park_Bench_Wood_Seat_9
+    100016: Low_Res_Metal_Support_Bench_Metal_Support_Low_Res_Metal_Sup.000
+    100018: Low_Res_Metal_Support_Bench_Metal_Support_Low_Res_Metal_Sup.001
+    100020: Low_Res_Metal_Support_Bench_Metal_Support_Low_Res_Metal_Support
+    100022: //RootNode
+    100024: Wood_Seat_1_Bench_Wood_Seats_Park_Bench
+    400000: Bench_Wood_Seats_Park_Bench_Wood_Seat_2
+    400002: Bench_Wood_Seats_Park_Bench_Wood_Seat_3
+    400004: Bench_Wood_Seats_Park_Bench_Wood_Seat_4
+    400006: Bench_Wood_Seats_Park_Bench_Wood_Seat_5
+    400008: Bench_Wood_Seats_Park_Bench_Wood_Seat_6
+    400010: Bench_Wood_Seats_Park_Bench_Wood_Seat_7
+    400012: Bench_Wood_Seats_Park_Bench_Wood_Seat_8
+    400014: Bench_Wood_Seats_Park_Bench_Wood_Seat_9
+    400016: Low_Res_Metal_Support_Bench_Metal_Support_Low_Res_Metal_Sup.000
+    400018: Low_Res_Metal_Support_Bench_Metal_Support_Low_Res_Metal_Sup.001
+    400020: Low_Res_Metal_Support_Bench_Metal_Support_Low_Res_Metal_Support
+    400022: //RootNode
+    400024: Wood_Seat_1_Bench_Wood_Seats_Park_Bench
+    2300000: Bench_Wood_Seats_Park_Bench_Wood_Seat_2
+    2300002: Bench_Wood_Seats_Park_Bench_Wood_Seat_3
+    2300004: Bench_Wood_Seats_Park_Bench_Wood_Seat_4
+    2300006: Bench_Wood_Seats_Park_Bench_Wood_Seat_5
+    2300008: Bench_Wood_Seats_Park_Bench_Wood_Seat_6
+    2300010: Bench_Wood_Seats_Park_Bench_Wood_Seat_7
+    2300012: Bench_Wood_Seats_Park_Bench_Wood_Seat_8
+    2300014: Bench_Wood_Seats_Park_Bench_Wood_Seat_9
+    2300016: Low_Res_Metal_Support_Bench_Metal_Support_Low_Res_Metal_Sup.000
+    2300018: Low_Res_Metal_Support_Bench_Metal_Support_Low_Res_Metal_Sup.001
+    2300020: Low_Res_Metal_Support_Bench_Metal_Support_Low_Res_Metal_Support
+    2300022: Wood_Seat_1_Bench_Wood_Seats_Park_Bench
+    3300000: Bench_Wood_Seats_Park_Bench_Wood_Seat_2
+    3300002: Bench_Wood_Seats_Park_Bench_Wood_Seat_3
+    3300004: Bench_Wood_Seats_Park_Bench_Wood_Seat_4
+    3300006: Bench_Wood_Seats_Park_Bench_Wood_Seat_5
+    3300008: Bench_Wood_Seats_Park_Bench_Wood_Seat_6
+    3300010: Bench_Wood_Seats_Park_Bench_Wood_Seat_7
+    3300012: Bench_Wood_Seats_Park_Bench_Wood_Seat_8
+    3300014: Bench_Wood_Seats_Park_Bench_Wood_Seat_9
+    3300016: Low_Res_Metal_Support_Bench_Metal_Support_Low_Res_Metal_Sup.000
+    3300018: Low_Res_Metal_Support_Bench_Metal_Support_Low_Res_Metal_Sup.001
+    3300020: Low_Res_Metal_Support_Bench_Metal_Support_Low_Res_Metal_Support
+    3300022: Wood_Seat_1_Bench_Wood_Seats_Park_Bench
+    4300000: Bench_Wood_Seats_Park_Bench_Wood_Seat_2
+    4300002: Bench_Wood_Seats_Park_Bench_Wood_Seat_3
+    4300004: Bench_Wood_Seats_Park_Bench_Wood_Seat_4
+    4300006: Bench_Wood_Seats_Park_Bench_Wood_Seat_5
+    4300008: Bench_Wood_Seats_Park_Bench_Wood_Seat_6
+    4300010: Bench_Wood_Seats_Park_Bench_Wood_Seat_7
+    4300012: Bench_Wood_Seats_Park_Bench_Wood_Seat_8
+    4300014: Bench_Wood_Seats_Park_Bench_Wood_Seat_9
+    4300016: Low_Res_Metal_Support_Bench_Metal_Support_Low_Res_Metal_Sup.000
+    4300018: Low_Res_Metal_Support_Bench_Metal_Support_Low_Res_Metal_Sup.001
+    4300020: Low_Res_Metal_Support_Bench_Metal_Support_Low_Res_Metal_Support
+    4300022: Wood_Seat_1_Bench_Wood_Seats_Park_Bench
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
