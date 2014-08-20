@@ -14,6 +14,16 @@ ModelImporter:
     100016: Sphere001
     100018: Sphere002
     100020: trouser001
+    100022: belt_001.001
+    100024: body.003
+    100026: hair001.001
+    100028: head.003
+    100030: shirt001.001
+    100032: shoe003.001
+    100034: shoe004.001
+    100036: Sphere001.001
+    100038: Sphere002.001
+    100040: trouser001.001
     400000: belt_001
     400002: body
     400004: //RootNode
@@ -25,6 +35,16 @@ ModelImporter:
     400016: Sphere001
     400018: Sphere002
     400020: trouser001
+    400022: belt_001.001
+    400024: body.003
+    400026: hair001.001
+    400028: head.003
+    400030: shirt001.001
+    400032: shoe003.001
+    400034: shoe004.001
+    400036: Sphere001.001
+    400038: Sphere002.001
+    400040: trouser001.001
     2300000: belt_001
     2300002: body
     2300004: hair001
@@ -35,6 +55,16 @@ ModelImporter:
     2300014: Sphere001
     2300016: Sphere002
     2300018: trouser001
+    2300020: belt_001.001
+    2300022: body.003
+    2300024: hair001.001
+    2300026: head.003
+    2300028: shirt001.001
+    2300030: shoe003.001
+    2300032: shoe004.001
+    2300034: Sphere001.001
+    2300036: Sphere002.001
+    2300038: trouser001.001
     3300000: belt_001
     3300002: body
     3300004: hair001
@@ -45,6 +75,16 @@ ModelImporter:
     3300014: Sphere001
     3300016: Sphere002
     3300018: trouser001
+    3300020: belt_001.001
+    3300022: body.003
+    3300024: hair001.001
+    3300026: head.003
+    3300028: shirt001.001
+    3300030: shoe003.001
+    3300032: shoe004.001
+    3300034: Sphere001.001
+    3300036: Sphere002.001
+    3300038: trouser001.001
     4300000: belt_001
     4300002: body
     4300004: hair001
@@ -55,6 +95,16 @@ ModelImporter:
     4300014: Sphere001
     4300016: Sphere002
     4300018: trouser001
+    4300020: belt_001.001
+    4300022: body.003
+    4300024: hair001.001
+    4300026: head.003
+    4300028: shirt001.001
+    4300030: shoe003.001
+    4300032: shoe004.001
+    4300034: Sphere001.001
+    4300036: Sphere002.001
+    4300038: trouser001.001
     9500000: //RootNode
   materials:
     importMaterials: 1

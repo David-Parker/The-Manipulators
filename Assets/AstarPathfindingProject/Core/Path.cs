@@ -253,7 +253,7 @@ yield return StartCoroutine (p.WaitForPath ());
 		}
 		
 		/** May be called by graph nodes to get a special cost for some connections.
-		 * Nodes may call it when PathNode.flag2 is set to true, for example mesh nodes, which have 
+		 * Nodes may call it when NodeOnPath.flag2 is set to true, for example mesh nodes, which have 
 		 * a very large area can be marked on the start and end nodes, this method will be called
 		 * to get the actual cost for moving from the start position to its neighbours instead
 		 * of as would otherwise be the case, from the start node's position to its neighbours.

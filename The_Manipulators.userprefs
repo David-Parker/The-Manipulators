@@ -1,8 +1,8 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts &amp; Classes\SelectorManager.cs">
+  <MonoDevelop.Ide.Workspace />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Human\SpawnManager.cs">
     <Files>
-      <File FileName="Assets\Scripts &amp; Classes\SelectorManager.cs" Line="8" Column="3" />
+      <File FileName="Assets\Scripts\Human\SpawnManager.cs" Line="62" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

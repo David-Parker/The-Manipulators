@@ -138,7 +138,7 @@ namespace Pathfinding {
 			SceneView.RepaintAll ();
 		}
 		
-		[UnityEditor.MenuItem ("Edit/Pathfinding/Delete Links on Selected %&b")]
+		[UnityEditor.MenuItem ("Edit/Pathfinding/Delete Links on OnLeftClick %&b")]
 		public static void DeleteLinks () {
 			Transform[] tfs = Selection.transforms;
 			for (int i=0;i<tfs.Length;i++) {

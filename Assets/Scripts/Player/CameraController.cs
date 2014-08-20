@@ -26,12 +26,13 @@ public class CameraController : MonoBehaviour {
 	/* Zoom Variables */
 	private float distance = 50;
 	public float sensitivityDistance = 50;
+	public float minFOV = 5;
 	public float maxFOV = 60;
 
 	void Start () {
 		/* Initialize the camera to a known state */
 		transform.eulerAngles = new Vector3(transform.eulerAngles.x,transform.eulerAngles.y,0);
-		distance = 0;
+		distance = camera.fieldOfView;
 		lastPos = UINITIALIZED;
 		newPivot = true;
 	}
@@ -56,26 +57,9 @@ public class CameraController : MonoBehaviour {
 		}
 
 		/* Check for zoom */
-		distance = Input.GetAxis("Mouse ScrollWheel") * sensitivityDistance;
-		RaycastHit hit_ground;
-		float groundZ = 0f;
-        Ray ray_find_ground = Camera.main.ViewportPointToRay(new Vector3(0.5F, 0.5F, 0));
-
-      	if(Physics.Raycast(ray_find_ground, out hit_ground)) {
-      		if(hit_ground.collider != null) {
-      			groundZ = hit_ground.point.y;
-      			Debug.Log(groundZ);
-      		}
-      	}
-        transform.position += transform.TransformDirection(0,0,1)*distance;
-
-        if(transform.position.y < groundZ + 5) {
-        	transform.position = new Vector3(transform.position.x,groundZ+6,transform.position.z);
-        }
-        else if (transform.position.y > maxFOV) {
-        	transform.position = new Vector3(transform.position.x,maxFOV,transform.position.z);
-        }
-        
+		distance -= Input.GetAxis("Mouse ScrollWheel") * sensitivityDistance;
+        distance = Mathf.Clamp(distance, minFOV, maxFOV);
+        camera.fieldOfView = Mathf.Lerp(camera.fieldOfView, distance,  Time.deltaTime * 10);
 
 		/* Check for Orbit */
 		if(Input.GetMouseButton(2)) {
