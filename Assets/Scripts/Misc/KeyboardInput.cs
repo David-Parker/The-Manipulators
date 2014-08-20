@@ -24,10 +24,10 @@ public class KeyboardInput : MonoBehaviour {
 				Debug.Log("Cursor On");
 				Screen.showCursor = true;
 				}
-			else if(Input.GetKeyDown(KeyCode.Y)){
-				gameObject.GetComponent<StateDisplay>().UpdateState("Killa Kill");
-			}
+		}else if(Input.GetKeyDown(KeyCode.Y)){
+			gameObject.GetComponent<StateDisplay>().UpdateState("Killa Kill");
 		}
+
 		}
 	}
 }
